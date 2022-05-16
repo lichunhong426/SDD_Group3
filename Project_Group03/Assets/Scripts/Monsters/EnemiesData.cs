@@ -6,7 +6,6 @@ public class EnemiesData : MonoBehaviour
 {
     private new string name;
     private string descriptions;
-    [SerializeField]
     private int health;
     private int attackDamage;
     private int defend;
