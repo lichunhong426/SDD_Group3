@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GenerateMonster : MonoBehaviour
 {
-    public GameObject monster;
+    public GameObject[] monsters;
     public int xPos;
     public int zPos;
     public int monsterCount = 0;
@@ -30,9 +30,13 @@ public class GenerateMonster : MonoBehaviour
     {
         if (other.tag == "Player" && monsterCount < 10)
         {
-            Instantiate(monster, new Vector3(xPos, 0, zPos), Quaternion.identity);
-            monsterCount += 1;
-            StartCoroutine(MonsterDrop());
+            foreach(GameObject monster in monsters)
+            {
+                Instantiate(monster, new Vector3(xPos, 0, zPos), Quaternion.identity);
+                monsterCount += 1;
+                StartCoroutine(MonsterDrop());
+            }
+
         }
     }
 }
