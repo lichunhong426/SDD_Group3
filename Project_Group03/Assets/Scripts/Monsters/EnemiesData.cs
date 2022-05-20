@@ -42,5 +42,10 @@ public class EnemiesData : MonoBehaviour
         return this.health;
     }
 
+    public int GetAttackDamage()
+    {
+        return this.attackDamage;
+    }
+
 
 }

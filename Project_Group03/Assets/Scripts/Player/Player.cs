@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
     {
         if (other.tag == "Monster")
         {
-            TakeDamage(5);
+            TakeDamage(other.transform.gameObject.GetComponent<EnemiesData>().GetAttackDamage());
         }
  
     }
