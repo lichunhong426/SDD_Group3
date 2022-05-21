@@ -46,7 +46,6 @@ public class Weapon : MonoBehaviour
             if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
             {
                 score += 1;
-
                 Destroy(other.transform.gameObject);
             }
         }
