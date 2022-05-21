@@ -11,15 +11,15 @@ public class GenerateMonster : MonoBehaviour
 
 
 
-
+ 
 
     // Update is called once per frame
     IEnumerator MonsterDrop()
     {
-        while (monsterCount < 10)
+        while (monsterCount < 50)
         {
-            xPos = Random.Range(10, 120);
-            zPos = Random.Range(60, 190);
+            xPos = Random.Range(-500, 500);
+            zPos = Random.Range(-500, 500);
 
             yield return new WaitForSeconds(0.1f);
 
@@ -28,10 +28,10 @@ public class GenerateMonster : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && monsterCount < 10)
+        if (other.tag == "Player" && monsterCount < 50)
         {
-            foreach(GameObject monster in monsters)
-            {
+            foreach (GameObject monster in monsters)
+            { 
                 Instantiate(monster, new Vector3(xPos, 0, zPos), Quaternion.identity);
                 monsterCount += 1;
                 StartCoroutine(MonsterDrop());
