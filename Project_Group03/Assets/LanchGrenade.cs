@@ -18,9 +18,10 @@ public class LanchGrenade : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && Weapon.score >= 5)
         {
             Lanch();
+            Weapon.score -= 5;
         }
     }
 

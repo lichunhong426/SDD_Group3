@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    public GameObject ExplosionEffect;
+    public float Delay = 3f;
+
+    public float ExplosionForce = 10f;
+    public float Radius = 20f;
+
+    private void Start()
     {
-        if (other.gameObject.tag == "Monster")
+        
+    }
+
+    private void Explode()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, Radius);
+
+        foreach(Collider near in colliders)
         {
-            other.GetComponent<EnemiesData>().SetHealth(other.GetComponent<EnemiesData>().GetHealth() - 30);
-            if (other.GetComponent<EnemiesData>().GetHealth() <= 0)
+            Rigidbody rig = near.GetComponent<Rigidbody>();
+
+            if(rig!= null)
             {
-                Destroy(other.gameObject);
+                rig.AddExplosionForce(ExplosionForce, transform.position, Radius, 1f, ForceMode.Impulse);
+
             }
+
+            Instantiate(ExplosionEffect, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
     }
 }

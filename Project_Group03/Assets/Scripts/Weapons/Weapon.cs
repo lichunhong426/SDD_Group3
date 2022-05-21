@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     bool isAttacking;
     public WeaponsDataScriptableObjects Unknown;
     public Text ScoreText;
-    int score;
+    public static int score;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         isAttacking = false;
+        ScoreText.text = "Score : " + score.ToString("000");
         if (Input.GetMouseButtonDown(0) && isAttacking == false)
         {
             anim.SetBool("isAttack", true);
@@ -45,7 +46,6 @@ public class Weapon : MonoBehaviour
             if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
             {
                 score += 1;
-                ScoreText.text = "Score : " + score.ToString("000");
                 Destroy(other.transform.gameObject);
             }
         }
