@@ -7,7 +7,7 @@ public class GameOverScript : MonoBehaviour
 {
     private void Start()
     {
-        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void Continue()

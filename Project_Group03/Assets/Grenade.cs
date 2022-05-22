@@ -13,7 +13,9 @@ public class Grenade : MonoBehaviour
     private void Start()
     {
         Invoke("Explode", Delay);
+
     }
+
 
     private void Explode()
     {
@@ -26,10 +28,20 @@ public class Grenade : MonoBehaviour
             if(rig!= null)
             {
                 rig.AddExplosionForce(ExplosionForce, transform.position, Radius, 1f, ForceMode.Impulse);
-
+                if (rig.gameObject.tag == "Monster")
+                {
+                    rig.transform.gameObject.GetComponent<EnemiesData>().SetHealth(rig.transform.gameObject.GetComponent<EnemiesData>().GetHealth() - 30);
+                    if(rig.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
+                    {
+                        Destroy(rig.gameObject);
+                    }
+                }
             }
 
+
+
             Instantiate(ExplosionEffect, transform.position, transform.rotation);
+            FindObjectOfType<AudioManager>().Play("Explosion");
             Destroy(gameObject);
         }
     }

@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Book
   Descriptions: 
   Health: 30
-  AttackDamage: 100
+  AttackDamage: 1
   Defend: 0
   Experience: 0

@@ -4236,7 +4236,7 @@ GameObject:
   - component: {fileID: 1487720976}
   m_Layer: 0
   m_Name: Weapon
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4351,6 +4351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Unknown: {fileID: 11400000, guid: 5962cf2e0693cc146adf6c3020ea6069, type: 2}
   ScoreText: {fileID: 1759925271}
+  Force: 1
 --- !u!1 &1535941072
 GameObject:
   m_ObjectHideFlags: 0
@@ -4801,6 +4802,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d510c1aee439b65489c38fd635039d65, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: ab08e27c9987ab147901d2860675ced0, type: 3}
+    volume: 0.5
+    pitch: 0.97
     loop: 0
     source: {fileID: 0}
 --- !u!1 &1642004717
