@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
+    
 
     public HealthBar HealthBar;
 
@@ -65,7 +66,6 @@ public class Player : MonoBehaviour
             isOption = false;
             isSetting = false;
         }
-
 
 
 

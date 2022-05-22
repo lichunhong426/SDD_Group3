@@ -5,6 +5,15 @@ using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource sound;
+
+    [SerializeField]
+    AudioClip clip;
+
+    [SerializeField]
+    float volume;
+
     Animator anim;
     bool isAttacking;
     public WeaponsDataScriptableObjects Unknown;
@@ -26,6 +35,7 @@ public class Weapon : MonoBehaviour
         ScoreText.text = "Score : " + score.ToString("000");
         if (Input.GetMouseButtonDown(0) && isAttacking == false)
         {
+            sound.PlayOneShot(clip, volume);
             anim.SetBool("isAttack", true);
             isAttacking = true;
         }
