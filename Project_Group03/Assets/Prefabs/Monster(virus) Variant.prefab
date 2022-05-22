@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1063161471664567199}
   - component: {fileID: 1052067851}
   - component: {fileID: 6020550371191710136}
-  - component: {fileID: 3396353457859458842}
+  - component: {fileID: -3529929965420312419}
   m_Layer: 0
   m_Name: Monster(virus) Variant
   m_TagString: Monster
@@ -31,14 +31,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5518785938566576499}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.0303, y: 1.0319, z: 26.999}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1.6288201, y: 1.6288201, z: 1.6288201}
   m_Children:
   - {fileID: 6492447205246539}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &8102716438073125996
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f365c48fead614f855acb7467eaad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!195 &3396353457859458842
+--- !u!195 &-3529929965420312419
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,7 +172,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.9333621
-
+  m_Speed: 20
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 300

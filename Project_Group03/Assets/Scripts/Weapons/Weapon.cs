@@ -22,19 +22,16 @@ public class Weapon : MonoBehaviour
     void Update()
     {
         isAttacking = false;
+        anim.SetBool("isAttack", false);
         ScoreText.text = "Score : " + score.ToString("000");
         if (Input.GetMouseButtonDown(0) && isAttacking == false)
         {
             anim.SetBool("isAttack", true);
             isAttacking = true;
         }
-        else
-        {
-            anim.SetBool("isAttack", false);
-            isAttacking = false;
-        }
-    }
 
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Monster") 
