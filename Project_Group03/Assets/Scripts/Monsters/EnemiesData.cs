@@ -12,8 +12,19 @@ public class EnemiesData : MonoBehaviour
     private int experience;
 
 
+    private MeshRenderer rend;
+
+    [SerializeField]
+    private Color colorToTurnTo = Color.red;
+
     public EnemiesDataScriptableObject enemiesScriptableObj;
 
+
+    private void Start()
+    {
+        rend = GetComponent<MeshRenderer>();
+
+    }
 
     public virtual void OnEnable()
     {
@@ -52,5 +63,12 @@ public class EnemiesData : MonoBehaviour
         return this.name;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Weapon")
+        {
+            rend.material.color = colorToTurnTo;
+        }
+    }
 
 }

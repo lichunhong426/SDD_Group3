@@ -64,7 +64,6 @@ public class Weapon : MonoBehaviour
         if (other.gameObject.tag == "Monster") 
         {
             other.transform.gameObject.GetComponent<EnemiesData>().SetHealth(other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() - Unknown.attack);
-
             Debug.Log(other.transform.gameObject.GetComponent<EnemiesData>().GetName() + " Health : " + other.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
 
 

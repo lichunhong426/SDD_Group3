@@ -609,7 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f365c48fead614f855acb7467eaad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Force: 1
+  Force: 5
 --- !u!114 &1483381883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7f492916b255649884323a2d036137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorToTurnTo: {r: 1, g: 0, b: 0, a: 1}
   enemiesScriptableObj: {fileID: 11400000, guid: 81bac34dc1da1d44f9323002d259f370, type: 2}
 --- !u!65 &2900628795601234440
 BoxCollider:
