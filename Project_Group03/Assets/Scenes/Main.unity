@@ -1016,6 +1016,7 @@ MonoBehaviour:
   monsters:
   - {fileID: 8073085309380690422, guid: 9f6aa76cdb023a84e9623d2c6e23cedc, type: 3}
   - {fileID: 5518785938566576499, guid: 441573ae1fb34654698f5542735fa226, type: 3}
+  - {fileID: 2696702570594023960, guid: 4fe49e67b85404540ba629f7309cd22d, type: 3}
   xPos: 0
   zPos: 0
   monsterCount: 0
@@ -5461,13 +5462,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755230087}
-  m_LocalRotation: {x: 0.41797465, y: 0.23333277, z: 0.11199594, w: -0.8708099}
+  m_LocalRotation: {x: -0.14330703, y: 0.25595468, z: -0.03839899, w: -0.955236}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -411.281, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -342.936, y: -30, z: 0}
 --- !u!1 &1759925269
 GameObject:
   m_ObjectHideFlags: 0
