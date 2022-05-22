@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 
     public GameObject OptionPanel;
     public GameObject SettingPanel;
+    public GameObject HintsPanel;
 
 
     public PlayerData data;
@@ -73,7 +74,10 @@ public class Player : MonoBehaviour
             Time.timeScale = 1;
         }
 
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            HintsPanel.SetActive(false);
+        }
 
     }
 
