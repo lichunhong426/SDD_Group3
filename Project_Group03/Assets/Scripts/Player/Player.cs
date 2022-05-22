@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
 
     bool isOption = false;
     bool isSetting = false;
-    bool isStat = false;
 
 
 
@@ -47,17 +46,21 @@ public class Player : MonoBehaviour
         data.UpdateStats();
 
 
-        if (Input.GetKeyDown(KeyCode.Escape) && isOption == false && isStat == false)
+        if (Input.GetKeyDown(KeyCode.Escape) && isOption == false )
         {
             OptionPanel.SetActive(true);
             isOption = true;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            Time.timeScale = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isOption == true && isSetting == false)
         {
             OptionPanel.SetActive(false);
             isOption = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isOption == true && isSetting == true)
         {
@@ -65,6 +68,9 @@ public class Player : MonoBehaviour
             SettingPanel.SetActive(false);
             isOption = false;
             isSetting = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            Time.timeScale = 1;
         }
 
 
