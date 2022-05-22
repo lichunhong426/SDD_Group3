@@ -13,7 +13,6 @@ public class Weapon : MonoBehaviour
     public Text ScoreText;
     public static int score;
 
-    public float Force = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +42,7 @@ public class Weapon : MonoBehaviour
         {
             other.transform.gameObject.GetComponent<EnemiesData>().SetHealth(other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() - Unknown.attack);
 
-            Debug.Log("Enemy Health : " + other.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
+            Debug.Log(other.transform.gameObject.GetComponent<EnemiesData>().GetName() + " Health : " + other.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
 
 
             if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)

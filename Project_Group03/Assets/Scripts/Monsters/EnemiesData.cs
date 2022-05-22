@@ -47,5 +47,10 @@ public class EnemiesData : MonoBehaviour
         return this.attackDamage;
     }
 
+    public string GetName()
+    {
+        return this.name;
+    }
+
 
 }

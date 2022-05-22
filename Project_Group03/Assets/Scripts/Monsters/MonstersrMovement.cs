@@ -8,7 +8,7 @@ public class MonstersrMovement : MonoBehaviour
     NavMeshAgent nma;
     Transform Player;
 
-    public float Force = 100f;
+    public float Force = 30f;
 
     void Start()
     {
