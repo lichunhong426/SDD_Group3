@@ -1,17 +1,42 @@
 fileFormatVersion: 2
-guid: 72e2cdd9a4161944da22dbe034cb856e
+guid: 820beb13e3ef10a4d961d19616de7baf
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: VirusAnim
+    second: Take 001
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material #2
+    second: {fileID: 2100000, guid: b57c8bf865897de4695e4a04d65c7349, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material #3
-    second: {fileID: 2100000, guid: ee5d9b60129641c48aa4920daacfe24a, type: 2}
+    second: {fileID: 2100000, guid: c05866df0e9639747a09c8adb4f0c5cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #45
+    second: {fileID: 2100000, guid: 9b504e798e673444caeed3c5bd19feb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #5
+    second: {fileID: 2100000, guid: e40641ab4ed182241ae80c977a31774a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: time tex
+    second: {fileID: 2800000, guid: 9704bfc29464e8f44830f005a59dd702, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: time tex2
+    second: {fileID: 2800000, guid: 467e115541729974b832e3f6cfcf7bb2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,11 +65,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: VirusAnim
+      name: Take 001
       takeName: Take 001
       internalID: 0
       firstFrame: 0
-      lastFrame: 66
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
