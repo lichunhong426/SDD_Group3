@@ -7,8 +7,8 @@ public class Grenade : MonoBehaviour
     public GameObject ExplosionEffect;
     public float Delay = 3f;
 
-    public float ExplosionForce = 100f;
-    public float Radius = 50f;
+    public float ExplosionForce = 1000f;
+    public float Radius = 500f;
 
     private void Start()
     {
