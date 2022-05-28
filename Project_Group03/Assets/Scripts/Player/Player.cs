@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("GameOverScene");
+        SceneManager.LoadScene("Thanks");
     }
 
     private void OnTriggerEnter(Collider other)
