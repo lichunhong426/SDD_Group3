@@ -354,13 +354,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 49
       objectReference: {fileID: 0}
+    - target: {fileID: 1361661623264310873, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105.9808
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361661623264310873, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18.702415
+      objectReference: {fileID: 0}
     - target: {fileID: 1361661623663284666, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1361661623663284667, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -617
+      value: -627
       objectReference: {fileID: 0}
     - target: {fileID: 1361661623666018006, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -369,6 +377,14 @@ PrefabInstance:
     - target: {fileID: 1361661623666018006, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToGameOverScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361661623666018007, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -61.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361661623666018007, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 43.6
       objectReference: {fileID: 0}
     - target: {fileID: 1361661623672815261, guid: 1f514792304b53947b8dd860275e9f62, type: 3}
       propertyPath: m_FontData.m_MinSize

@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Virus
   Descriptions: 
   Health: 20
-  AttackDamage: 200
+  AttackDamage: 2
   Defend: 0
   Experience: 0
