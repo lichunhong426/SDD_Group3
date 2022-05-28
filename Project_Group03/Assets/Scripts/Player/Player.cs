@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public GameObject OptionPanel;
     public GameObject SettingPanel;
     public GameObject HintsPanel;
-
+    public GameObject TimeAndScorePannel;
 
     public PlayerData data;
 
@@ -91,16 +91,15 @@ public class Player : MonoBehaviour
         if(data.CurrentHealth <= 0)
         {
             data.CurrentHealth = 0;
-            LoadScene();
+            TimeAndScorePannel.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0;
         }
     }
 
 
 
-    public void LoadScene()
-    {
-        SceneManager.LoadScene("Thanks");
-    }
 
     private void OnTriggerEnter(Collider other)
     {
