@@ -325,7 +325,6 @@ GameObject:
   - component: {fileID: 1361661623663284667}
   - component: {fileID: 1361661623663284665}
   - component: {fileID: 1361661623663284666}
-  - component: {fileID: 1361661623663284664}
   m_Layer: 5
   m_Name: ThanksText
   m_TagString: Untagged
@@ -401,18 +400,6 @@ MonoBehaviour:
   m_Text: "Thanks for : \n\n\n\n\nsmokebomb99 \n https://freesound.org/people/smokebomb99/sounds/147289/\n\n\n\n\nPadia
     3D\nhttps://assetstore.unity.com/packages/3d/props/weapons/free-hq-stick-grenade-198754\n\nYoshikitaima\nhttps://www.turbosquid.com/3d-models/3d-model-clothes-hanger-3d-illustration-1889517\n\n\n\n\nUnity
     Technologies\nhttps://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325#description\n\n\n\n\nNayrissa\nhttps://assetstore.unity.com/packages/2d/gui/icons/371-simple-buttons-pack-97516#description\n\n\n\n\ncreativica\nhttps://www.vectorstock.com/royalty-free-vector/bedroom-at-night-background-vector-38747838\n\n\n\n\n\n\n\n\n"
---- !u!114 &1361661623663284664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361661623663284644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61f487d618987014485f54658e8e192c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1361661623666018000
 GameObject:
   m_ObjectHideFlags: 0

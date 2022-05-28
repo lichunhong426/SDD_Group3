@@ -5,17 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GoToThanks : MonoBehaviour
 {
-    public GameObject ThanksCanvas;
-    public void DeleteAll()
+    public void GoToThanksScene()
     {
-        foreach (GameObject o in Object.FindObjectsOfType<GameObject>())
-        {
-            if(o.name != "ThanksCanvas")
-            {
-                Destroy(o);
-                ThanksCanvas.SetActive(true);
-            }
-
-        }
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Thanks");
     }
 }

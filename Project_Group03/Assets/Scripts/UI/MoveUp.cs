@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class MoveUp : MonoBehaviour
 {
-    private RectTransform moveUpRectTransform;
+    RectTransform moveUpRectTransform;
+
     private void Start()
     {
-
         moveUpRectTransform = GetComponent<RectTransform>();
-        
     }
 
     // Update is called once per frame
