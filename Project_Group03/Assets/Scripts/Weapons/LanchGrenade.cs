@@ -7,7 +7,7 @@ public class LanchGrenade : MonoBehaviour
     public Transform SpawnPoint;
     public GameObject Grenade;
 
-    float range = 50f;
+    float range = 20f;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class LanchGrenade : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) && Weapon.score >= 5)
         {

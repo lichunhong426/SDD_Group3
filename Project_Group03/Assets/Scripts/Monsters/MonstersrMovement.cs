@@ -8,7 +8,6 @@ public class MonstersrMovement : MonoBehaviour
     NavMeshAgent nma;
     Transform Player;
 
-    public float Force = 30f;
 
     void Start()
     {
@@ -40,14 +39,6 @@ public class MonstersrMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Weapon")
-        {
-            Vector3 pushDirection = other.transform.position - transform.position;
-            pushDirection = -pushDirection.normalized;
-            GetComponent<Rigidbody>().AddForce(pushDirection * Force * 100);
-        }
-    }
+
 
 }

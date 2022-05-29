@@ -6084,6 +6084,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: MonsterHurt
+    clip: {fileID: 8300000, guid: 560836392f7809c4ca6182a22d8e2dd3, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &1642004717
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,6 +7589,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 186684323}
     m_Modifications:
+    - target: {fileID: 919132147812318884, guid: 6735b30981b72524d9770f28114349dc, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1754487
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132147812318884, guid: 6735b30981b72524d9770f28114349dc, type: 3}
+      propertyPath: m_Center.x
+      value: 0.6398294
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132147812318884, guid: 6735b30981b72524d9770f28114349dc, type: 3}
+      propertyPath: m_Center.y
+      value: -0.3464578
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132147812318884, guid: 6735b30981b72524d9770f28114349dc, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0022419952
+      objectReference: {fileID: 0}
     - target: {fileID: 5448966935931336142, guid: 6735b30981b72524d9770f28114349dc, type: 3}
       propertyPath: ScoreText
       value: 

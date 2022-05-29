@@ -65,7 +65,7 @@ public class Weapon : MonoBehaviour
         {
             other.transform.gameObject.GetComponent<EnemiesData>().SetHealth(other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() - Unknown.attack);
             Debug.Log(other.transform.gameObject.GetComponent<EnemiesData>().GetName() + " Health : " + other.transform.gameObject.GetComponent<EnemiesData>().GetHealth());
-
+            FindObjectOfType<AudioManager>().Play("MonsterHurt");
 
             if (other.transform.gameObject.GetComponent<EnemiesData>().GetHealth() <= 0)
             {
